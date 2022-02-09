@@ -1,0 +1,133 @@
+\author{Nicholas A. Lines}
+\date{2022-02-08}
+\title{Tables to accompany CHANCE article submission}
+\documentclass{article}
+\usepackage[a4paper,margin=1in,landscape]{geometry}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{booktabs} 
+\usepackage{hyperref}
+\hypersetup{
+ pdfauthor={Nicholas Lines, Data Science Research},
+ pdftitle={Tables},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 25.3.1 (Org mode 9.3.7)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+
+\section{Tables}
+
+\setcounter{table}{1}
+
+
+\begin{longtable}{rrrrrrrr}
+\caption{Correlation of seven popular readability formulae across the Blog Authorship Corpus.}
+\label{Table 2}\\
+\toprule
+{} &  Dale-Chall &   ARI &  Coleman-Liau &  Spache &  Lensear Write &  Flesch&  Flesch-Kincaid \\
+\midrule
+\endfirsthead
+\caption[]{Correlation of seven popular readability formulae across the Blog Authorship Corpus.} \\
+\toprule
+{} &  Dale-Chall &   ARI &  Coleman-Liau &  Spache &  Lensear Write &  Flesch&  Flesch-Kincaid \\
+\midrule
+\endhead
+\midrule
+\multicolumn{8}{r}{{Continued on next page}} \\
+\midrule
+\endfoot
+
+\bottomrule
+\endlastfoot
+Dale-Chall     &        1.00 &  0.93 &          0.13 &    0.95 &           0.93 &   -0.94 &            0.93 \\
+ARI            &        0.93 &  1.00 &          0.11 &    1.00 &           1.00 &   -0.99 &            1.00 \\
+Coleman-Liau   &        0.13 &  0.11 &          1.00 &    0.09 &           0.09 &   -0.20 &            0.11 \\
+Spache         &        0.95 &  1.00 &          0.09 &    1.00 &           0.99 &   -0.99 &            1.00 \\
+Lensear Write  &        0.93 &  1.00 &          0.09 &    0.99 &           1.00 &   -0.99 &            1.00 \\
+Flesch        &       -0.94 & -0.99 &         -0.20 &   -0.99 &          -0.99 &    1.00 &           -0.99 \\
+Flesch-Kincaid &        0.93 &  1.00 &          0.11 &    1.00 &           1.00 &   -0.99 &            1.00 \\
+\end{longtable}
+
+\pagebreak
+
+\begin{longtable}{rrrrrrrrr}
+\caption{An example of grading inconsistencies between popular readability formulae. Three sample texts are provided, beginning with the All the World's a Stage monologue uttered by Jacques in As You Like It, Act II Scene VII. The second and third texts are the encyclopedia entries on William Shakespeare taken from the Simplified English and standard Wikipedia, respectively. The grades shown are the maximum grade predicted for each text by each formula. Grade 13 is considered college-level, and Grade 17 graduate level, etc.}
+\label{Table 3}\\
+\toprule
+  Text Sample &  Dale-Chall &  ARI &  Coleman-Liau &  Spache &  Linsear Write &  Flesch&  Flesch-Kincaid \\
+\midrule
+\endfirsthead
+\caption[]{An example of grading inconsistencies between popular readability formulae. Three sample texts are provided, beginning with the All the World's a Stage monologue uttered by Jacques in As You Like It, Act II Scene VII. The second and third texts are the encyclopedia entries on William Shakespeare taken from the Simplified English and standard Wikipedia, respectively. The grades shown are the maximum grade predicted for each text by each formula. Grade 13 is considered college-level, and Grade 17 graduate level, etc.} \\
+\toprule
+  Text Sample &  Dale-Chall &  ARI &  Coleman-Liau &  Spache &  Linsear Write &  Flesch&  Flesch-Kincaid \\
+\midrule
+\endhead
+\midrule
+\multicolumn{8}{r}{{Continued on next page}} \\
+\midrule
+\endfoot
+
+\bottomrule
+\endlastfoot
+  Shakespeare &          12 &   14 &            10 &       8 &             17 &       9 &              12 \\
+  Wiki Simple &          13 &   11 &            11 &       7 &             11 &      12 &               9 \\
+Wiki Standard &          14 &   14 &            13 &       8 &             17 &      13 &              13 \\
+\end{longtable}
+
+\pagebreak
+
+\begin{longtable}{rrrrrrrr}
+\caption{Correlation of author age and sex with readability formulae values in the Blog Authorship Corpus. The Sex row represents point-biserial correlation, and the Age row represents Pearson correlation.}
+\label{Table 4}\\
+\toprule
+{} &  Dale-Chall &   ARI &  Coleman-Liau &  Spache &  Lensear Write &  Flesch&  Flesch-Kincaid \\
+\midrule
+\endfirsthead
+\caption[]{Correlation of author age and sex with readability formulae values in the Blog Authorship Corpus. The Sex row represents point-biserial correlation, and the Age row  represents Pearson correlation.} \\
+\toprule
+{} &  Dale-Chall &   ARI &  Coleman-Liau &  Spache &  Linsear Write &  Flesch&  Flesch-Kincaid \\
+\midrule
+\endhead
+\midrule
+\multicolumn{8}{r}{{Continued on next page}} \\
+\midrule
+\endfoot
+
+\bottomrule
+\endlastfoot
+Sex &  0.03 &  0.01 &  0.21 &  0.01 &  0.01 & -0.03 &  0.01 \\
+Age & -0.08 & -0.04 &  0.26 & -0.06 & -0.05 & 0.02  &  -0.04 \\
+\end{longtable}
+
+\pagebreak
+
+
+\begin{longtable}{lrrrrrrr}
+\caption{Point-biserial correlation of sex to blog readability scores for three self-declared vocation groups in the BAC. Rather than explaining away the relationship between sex and readability, grouping bloggers by vocation shows some professions exhibit more extreme sex bias in readability than others. Similar results are found for Pearson correlation of age to readability in these groups.}
+\label{Table 5}\\
+\toprule
+{} &  Dale-Chall &   ARI &  Coleman-Liau &  Spache &  Lensear Write &  Flesch &  Flesch-Kincaid \\
+\midrule
+\endfirsthead
+\caption[]{Point-biserial correlation of sex to blog readability scores for three self-declared vocation groups in the BAC. Rather than explaining away the relationship between sex and readability, grouping bloggers by vocation shows some professions exhibit more extreme sex bias in readability than others. Similar results are found for Pearson correlation of age to readability in these groups.} \\
+\toprule
+{} &  Dale-Chall &   ARI &  Coleman-Liau &  Spache &  Lensear Write &  Flesch &  Flesch-Kincaid \\
+\midrule
+\endhead
+\midrule
+\multicolumn{8}{r}{{Continued on next page}} \\
+\midrule
+\endfoot
+
+\bottomrule
+\endlastfoot
+Accounting         &        0.03 & -0.01 &          0.40 &   -0.01 &          -0.01 &   -0.04 &           -0.00 \\
+Investment Banking &        0.17 & -0.07 &          0.64 &   -0.05 &          -0.10 &   -0.08 &           -0.07 \\
+Maritime           &        0.33 &  0.31 &          0.52 &    0.30 &           0.25 &   -0.41 &            0.31 \\
+\end{longtable}
+
+
+\end{document}
