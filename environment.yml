@@ -1,4 +1,4 @@
-name: base
+name: readability
 channels:
   - conda-forge
   - defaults
